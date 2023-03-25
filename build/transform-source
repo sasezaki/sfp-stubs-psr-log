@@ -13,3 +13,10 @@ cp vendor/psr/log/Psr/Log/AbstractLogger.php stubs-for-throwable/AbstractLogger.
 vendor/bin/rector process --config=build/rector-stubs-for-throwable.php --clear-cache --no-diffs
 mv stubs-for-throwable/LoggerInterface.php stubs-for-throwable/LoggerInterface.phpstub
 mv stubs-for-throwable/AbstractLogger.php stubs-for-throwable/AbstractLogger.phpstub
+
+## stubs-better
+cp vendor/psr/log/Psr/Log/LoggerInterface.php stubs-better/LoggerInterface.php
+cp vendor/psr/log/Psr/Log/AbstractLogger.php stubs-better/AbstractLogger.php
+vendor/bin/rector process --config=build/rector-stubs-better.php --clear-cache --no-diffs
+mv stubs-better/LoggerInterface.php stubs-better/LoggerInterface.phpstub
+mv stubs-better/AbstractLogger.php stubs-better/AbstractLogger.phpstub
